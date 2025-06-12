@@ -12,9 +12,9 @@ void blink_task(void *pvParameter) {
 
     while (1) {
         gpio_set_level(LED_PIN, 1);  // Turn LED on
-        vTaskDelay(pdMS_TO_TICKS(500));  // Delay 500ms
+        vTaskDelay(pdMS_TO_TICKS(100));  // Delay 500ms
         gpio_set_level(LED_PIN, 0);  // Turn LED off
-        vTaskDelay(pdMS_TO_TICKS(500));  // Delay 500ms
+        vTaskDelay(pdMS_TO_TICKS(100));  // Delay 500ms
     }
 }
 
